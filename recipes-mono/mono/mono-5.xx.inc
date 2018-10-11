@@ -101,3 +101,5 @@ RDEPENDS_${PN} =+ "bash"
 
 # Workaround for observed race in `make install`
 PARALLEL_MAKEINST=""
+
+INSANE_SKIP_${PN} += " file-rdeps" 
